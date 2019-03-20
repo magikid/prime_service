@@ -66,6 +66,4 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
-# Configure your database
-config :prime_generator, PrimeGenerator.Repo,
-  url: "postgres://kgupbwml:du0FG3wg0-g5XFt8Vd4Jynmtzi0MpdoJ@otto.db.elephantsql.com:5432/kgupbwml?pool_size=2"
+import_config "dev.secret.exs"
